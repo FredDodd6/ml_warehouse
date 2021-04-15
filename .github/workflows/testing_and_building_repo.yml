@@ -43,7 +43,7 @@ jobs:
           eval $(perl -I ~/perl5ext/lib/perl5/ -Mlocal::lib=~/perl5ext)
           export TEST_AUTHOR=1
           ./Build dist
-          export DIST_FILE=$(ls ml_warehouse-*.tar.gz)
+          export DIST_FILE=ml_warehouse-*.tar.gz
           export MD5_FILE=$DIST_FILE.md5
           md5sum $DIST_FILE > $MD5_FILE
           export SHA256_FILE=$DIST_FILE.sha256
